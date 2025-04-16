@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="game-intro">
+        <h1>🔐 Escape Room Quiz: Test Your Wits and Escape! 🔓</h1>
+        <p>Step into the challenge of your life with the <strong>Escape Room Quiz</strong>! Are you ready to unlock clues, solve mind-bending puzzles, and escape before time runs out?</p>
+        
+        <h3>🚀 Features:</h3>
+        <ul>
+            <li><strong>Engaging Puzzles:</strong> Each level presents a unique, brain-teasing question</li>
+            <li><strong>Immersive Experience:</strong> Dive into a world of suspense and mystery</li>
+            <li><strong>Time Pressure:</strong> Only 60 seconds per question - think fast!</li>
+            <li><strong>Track Your Progress:</strong> See your score at the end</li>
+        </ul>
+
+        <p>⏳ Can you solve all the puzzles in time? The clock is ticking...</p>
+        
+        <button onclick="startGame()">Start Your Escape Now!</button>
+    </section>
+
+    <div id="quiz-container" style="display: none;">
+        <div id="timer">Time: 60s</div>
+        <div id="question-container">
+            <p id="question-text"></p>
+            <div id="answers-container"></div>
+            <button id="submit-answer" onclick="submitAnswer()">Submit Answer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
